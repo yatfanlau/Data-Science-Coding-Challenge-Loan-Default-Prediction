@@ -1,7 +1,6 @@
 # Loan-Default-Prediction
 
-Loan default prediction is an important problem in many banks or financial institutions as losses may be incurred if the borrowers default. 
-This repository consists of the codes for a data science challenge for loan default prediction on a real world data set provided by Coursera. The goal of this project is to predict loan default on a real world data set for a data science coding challenge on Coursera. Different classifiers(logistic regression, random forests, XGBoost and LightGBM) are applied to the data set and the results are compared among different classifiers. 
+Loan default prediction is an important issue for many banks and financial institutions, as significant losses can occur if borrowers default. This repository contains code for a data science challenge on Coursera aimed at predicting loan defaults using a real-world dataset. Various classifiers, including logistic regression, random forests, XGBoost, and LightGBM, are applied to the dataset, and the results are compared across these different classifiers
 
 
 
