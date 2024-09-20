@@ -11,6 +11,6 @@ In the context of predicting loan defaults, traditional metrics like accuracy ca
 
 ##
 Result:
-![alt text](http://url/to/result.PNG)
+![Alt text](result.png)
 
 
