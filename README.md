@@ -11,7 +11,7 @@ In the context of predicting loan defaults, traditional metrics like accuracy ca
 
 ##
 Result:
-![An example image](\Data-Science-Coding-Challenge-Loan-Default-Prediction\result.PNG)
+![An example image]([\Data-Science-Coding-Challenge-Loan-Default-Prediction\result.PNG](https://github.com/yatfanlau/Data-Science-Coding-Challenge-Loan-Default-Prediction/blob/main/result.PNG))
 
 
 
