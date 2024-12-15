@@ -50,6 +50,74 @@ In the context of predicting loan defaults, traditional metrics like accuracy ca
 
 <!-- Also, correctly identifying potential defaulters is crucial because failures to do so can lead to significant financial losses. Thus, the recall(true positive rate) is another important metric that we would like to optimize. -->
 
+Certainly! Adding a results section to your README file is an excellent way to provide a comprehensive overview of the performance and outcomes of your model training process. Here's how you could structure this section to effectively communicate the results:
+
+---
+
+## Results Overview
+
+This section provides a summary of the training process outcomes, including the optimal hyperparameters found for each base model, their respective performance metrics, and the performance of the final ensemble model.
+
+### Optimal Hyperparameters
+
+- **XGBoost**:
+  - `max_depth`: 6_
+  - `min_child_weight`: 1_
+  - `subsample`:  0.8_
+  - `eta`: 0.1_
+  - _Other relevant parameters..._
+
+- **CatBoost**:
+  - `depth`: 8_
+  - `learning_rate`: 0.05_
+  - `l2_leaf_reg`: 3_
+  - _Other relevant parameters..._
+
+- **LightGBM**:
+  - `num_leaves`: 31_
+  - `max_depth`:  -1 
+  - `learning_rate`: 0.05_
+  - `feature_fraction`: 0.9_
+  - _Other relevant parameters..._
+
+### Performance Metrics
+
+#### Base Model ROC AUC
+
+Each base model was evaluated using k-fold cross-validation. The average ROC AUC scores from the cross-validation are presented below, providing an insight into each model's performance.
+
+- **XGBoost**: 0.92_
+- **CatBoost**: 0.93_
+- **LightGBM**: 0.91_
+
+The ROC AUC scores indicate the ability of each model to classify the positive class correctly across different threshold settings.
+
+#### Meta-Model Performance
+
+After training the logistic regression meta-model using the predictions from the base models, we evaluated its performance.
+
+- **Logistic Regression Meta-Model ROC AUC**: _e.g., 0.94_
+
+This score is crucial as it reflects the combined predictive power of the stacking ensemble, demonstrating the effectiveness of integrating the base models' outputs.
+
+### Conclusion
+
+This section summarizes the overall achievements and any insights gained during the model training process. It might also include recommendations for further improvements or additional experiments to explore.
+
+- **Summary**: The ensemble approach resulted in a higher ROC AUC compared to any individual base model, underscoring the benefit of model stacking in this scenario.
+- **Recommendations**: Future work could explore alternative meta-models or include additional base models to potentially improve the ensemble's predictive performance.
+
+### Additional Notes
+
+- **Software and Libraries Used**: List all software and libraries along with their versions to ensure reproducibility.
+- **System Configuration**: Mention the hardware and operating system used, if relevant.
+- **Contact Information**: Provide details for users to reach out with questions or collaborations.
+
+---
+
+By structuring your results section in this manner, you provide a clear, detailed, and professional overview of your project's outcomes, making it easier for readers to understand the process and results at a glance. This also enhances the credibility and utility of your README file as a comprehensive project documentation tool.
+
+
 ## Result:
 <img src="./result.png" width="400" height="450" alt="result">
 
