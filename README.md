@@ -16,7 +16,6 @@ This section outlines the process for training a stacking ensemble model, which 
 - **Objective**: Optimize the hyperparameters of each base model (XGBoost, CatBoost, LightGBM) to achieve the best performance.
 - **Data**: Use the `train.csv` dataset for training.
 - **Methodology**: Employ Bayesian optimization to systematically search for the optimal set of parameters for each model. This method uses prior probability distributions of the parameters and updates them based on evaluation results.
-- **Implementation Tips**:
   - Define a suitable range and distribution for each hyperparameter.
   - Set a maximum number of iterations or a stopping criterion to limit the search.
   - Use a validation set or cross-validation within this step to assess the performance of hyperparameters.
