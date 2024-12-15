@@ -61,24 +61,24 @@ This section provides a summary of the training process outcomes, including the 
 ### Optimal Hyperparameters
 
 - **XGBoost**:
-  - `max_depth`: 6_
-  - `min_child_weight`: 1_
-  - `subsample`:  0.8_
-  - `eta`: 0.1_
-  - _Other relevant parameters..._
+  - `max_depth`: 6
+  - `min_child_weight`: 1
+  - `subsample`:  0.8
+  - `eta`: 0.1
+  - _Other relevant parameters...
 
 - **CatBoost**:
-  - `depth`: 8_
-  - `learning_rate`: 0.05_
-  - `l2_leaf_reg`: 3_
-  - _Other relevant parameters..._
+  - `depth`: 8
+  - `learning_rate`: 0.05
+  - `l2_leaf_reg`: 3
+  - _Other relevant parameters...
 
 - **LightGBM**:
-  - `num_leaves`: 31_
+  - `num_leaves`: 31
   - `max_depth`:  -1 
-  - `learning_rate`: 0.05_
-  - `feature_fraction`: 0.9_
-  - _Other relevant parameters..._
+  - `learning_rate`: 0.05
+  - `feature_fraction`: 0.9
+  - _Other relevant parameters...
 
 ### Performance Metrics
 
@@ -86,23 +86,13 @@ This section provides a summary of the training process outcomes, including the 
 
 Each base model was evaluated using k-fold cross-validation. The average ROC AUC scores from the cross-validation are presented below, providing an insight into each model's performance.
 
-- **XGBoost**: 0.92_
-- **CatBoost**: 0.93_
-- **LightGBM**: 0.91_
-
-The ROC AUC scores indicate the ability of each model to classify the positive class correctly across different threshold settings.
+- **XGBoost**: 0.92
+- **CatBoost**: 0.93
+- **LightGBM**: 0.91
 
 #### Meta-Model Performance
 
-After training the logistic regression meta-model using the predictions from the base models, we evaluated its performance.
-
-- **Logistic Regression Meta-Model ROC AUC**: _e.g., 0.94_
-
-This score is crucial as it reflects the combined predictive power of the stacking ensemble, demonstrating the effectiveness of integrating the base models' outputs.
-
-### Conclusion
-
-This section summarizes the overall achievements and any insights gained during the model training process. It might also include recommendations for further improvements or additional experiments to explore.
+- **Logistic Regression Meta-Model ROC AUC**: 0.94
 
 - **Summary**: The ensemble approach resulted in a higher ROC AUC compared to any individual base model, underscoring the benefit of model stacking in this scenario.
 - **Recommendations**: Future work could explore alternative meta-models or include additional base models to potentially improve the ensemble's predictive performance.
