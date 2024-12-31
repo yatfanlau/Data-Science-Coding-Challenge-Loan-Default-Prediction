@@ -102,5 +102,5 @@ After obtaining the optimal hyperparameters, the base models are trained on the 
 
 - **Summary**: The ensemble approach resulted in a only very slightly higher ROC AUC compared to any individual base model. This may not be statistically significant and may due to random error. Whether stacking generalization would help using the present base models may still require further study or other improvements are required. Future work could explore alternative meta-models or include additional base models to potentially improve the ensemble's predictive performance.
 
-<img src="./result.png" width="400" height="450" alt="result">
+<img src="./result_.png" width="400" height="450" alt="result">
 
