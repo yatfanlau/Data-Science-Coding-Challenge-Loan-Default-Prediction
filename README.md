@@ -1,6 +1,6 @@
 # Loan-Default-Prediction
 
-Loan default prediction is an important issue for many banks and financial institutions, as significant losses can occur if borrowers default. This repository contains code for a data science challenge on Coursera aimed at predicting loan defaults using a real-world dataset. 
+Loan default prediction is an important issue for many banks and financial institutions, as significant losses can occur if borrowers default. This repository contains code for a data science challenge on [Coursera](https://www.coursera.org/projects/data-science-coding-challenge-loan-default-prediction) aimed at predicting loan defaults using a real-world dataset.
 
 
 ## Model Training Process
