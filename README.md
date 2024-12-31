@@ -3,17 +3,13 @@
 Loan default prediction is an important issue for many banks and financial institutions, as significant losses can occur if borrowers default. This repository contains code for a data science challenge on Coursera aimed at predicting loan defaults using a real-world dataset. 
 
 
-
-
-
-
 ## Model Training Process
 
-This section outlines the process for training a stacking ensemble model, which combines predictions from multiple base models using a meta-model. The base models include XGBoost, CatBoost, and LightGBM, and we utilize logistic regression as our meta-model. The following steps detail the model training and prediction process:
+This section outlines the process for training a stacking ensemble model, which combines predictions from multiple base models using a meta-model. The base models include XGBoost, CatBoost, and Random Forest, and we utilize logistic regression as our meta-model. The following steps detail the model training and prediction process:
 
 ### 1. Hyperparameter Optimization for Base Models
 
-- **Objective**: Optimize the hyperparameters of each base model (XGBoost, CatBoost, LightGBM) to achieve the best performance.
+- **Objective**: Optimize the hyperparameters of each base model (XGBoost, CatBoost, Random Forest) to achieve the best performance.
 - **Data**: Use the `train.csv` dataset for training.
 - **Methodology**: Employ Bayesian optimization to systematically search for the optimal set of parameters for each model. This method uses prior probability distributions of the parameters and updates them based on evaluation results.
   - Define a suitable range and distribution for each hyperparameter.
@@ -26,7 +22,7 @@ This section outlines the process for training a stacking ensemble model, which 
 - **Cross-Validation Setup**: Implement a k-fold cross-validation to ensure that each instance in the dataset is used for both training and validation. 
 - **Procedure**:
   - **For Each Fold**:
-    - Train each base model (XGBoost, CatBoost, LightGBM) on the training portion of the fold using the previously optimized hyperparameters.
+    - Train each base model (XGBoost, CatBoost, Random Forest) on the training portion of the fold using the previously optimized hyperparameters.
     - Predict the default probabilities on the validation portion of the fold.
   - Compile the predictions from each model across all folds. These serve as the input features for the meta-model.
 
