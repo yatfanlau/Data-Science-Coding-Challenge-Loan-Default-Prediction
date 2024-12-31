@@ -90,7 +90,7 @@ Best iteration:  661
 
 #### Base Model performance
 
-After obtaining the optimal hyperparameters, the base models are trained on the whole training set and thier indepndent performances are given below
+After obtaining the optimal hyperparameters, the base models are trained on the whole training set and thier indepndent performances(AUC) are given below
 
 - **XGBoost**: 0.7604
 - **CatBoost**: 0.7601
